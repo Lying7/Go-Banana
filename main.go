@@ -1,8 +1,18 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"Go-Banana/conf"    //config
+	"Go-Banana/dbProxy" //db proxy
+	"Go-Banana/utils"   //utils
+
+	//utils and ti
+	"github.com/gin-gonic/gin" //gin framework
+)
 
 func main() {
-	ver := gin.Version
-	println("Demo with gin", ver)
+	ginVer := gin.Version
+	dbProxyVer := dbProxy.GetDBProxyVersion()
+	confVer := conf.GetConfVersion()
+	utilsVer := utils.GetUtilsVersion()
+	println("Simple demo with gin[", ginVer, "], dbProxy[", dbProxyVer, "], conf[", confVer, "], utils[", utilsVer, "]")
 }
