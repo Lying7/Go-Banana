@@ -8,3 +8,8 @@ var version = "0.0.1"
 func GetDBProxyVersion() string {
 	return version
 }
+
+func InitDBProxy() int {
+	//init db proxy
+	return 0
+}

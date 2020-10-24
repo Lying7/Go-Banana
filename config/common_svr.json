@@ -1,0 +1,19 @@
+{
+    "ResVersion":"0.0.1",
+    "CodeVersion":"0.0.1",
+
+    "Module":[
+        {
+            "Name":"config",
+            "InitFunc":"InitConfig()"
+        },
+        {
+            "Name":"dbproxy",
+            "InitFunc":"InitDBProxy()"
+        },
+        {
+            "Name":"utils",
+            "InitFunc":"InitUtils()"
+        }
+    ]
+}
