@@ -1,6 +1,7 @@
 package glog
 
 import (
+	"Go-Banana/utils"
 	"fmt"
 )
 
@@ -8,7 +9,7 @@ import (
 *
  */
 func Info(agrs ...string) {
-	fmt.Println(agrs)
+	fmt.Println("[INFO][", utils.GetCurTime(), "]", agrs)
 	return
 }
 
@@ -16,7 +17,7 @@ func Info(agrs ...string) {
 *
  */
 func Debug(agrs ...string) {
-	fmt.Println(agrs)
+	fmt.Println("[DEBUG][", utils.GetCurTime(), "]", agrs)
 	return
 }
 
@@ -24,7 +25,7 @@ func Debug(agrs ...string) {
 *
  */
 func Warn(agrs ...string) {
-	fmt.Println(agrs)
+	fmt.Println("[WARN][", utils.GetCurTime(), "]", agrs)
 	return
 }
 
@@ -32,6 +33,6 @@ func Warn(agrs ...string) {
 *
  */
 func Error(agrs ...string) {
-	fmt.Println(agrs)
+	fmt.Println("[ERROR][", utils.GetCurTime(), "]", agrs)
 	return
 }

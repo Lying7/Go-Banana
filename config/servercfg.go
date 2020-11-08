@@ -43,7 +43,7 @@ func getConfig(path string) interface{} {
 	glog.Info(string(data[:n]))
 
 	var svrCfg ServerConfig
-	err = json.Unmarshal(data, &svrCfg)
+	err = json.Unmarshal(data[:n], &svrCfg)
 	if err != nil {
 		glog.Error(err.Error())
 	}

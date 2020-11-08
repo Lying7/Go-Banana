@@ -23,7 +23,6 @@ func Start() {
 
 	ptrGinEngine.Any("/", DealMsg)
 	var listenPort string = fmt.Sprintf(":%d", config.ServerCfg.Port)
-	glog.Debug(listenPort)
 	ptrGinEngine.Run(listenPort)
 	return
 }
