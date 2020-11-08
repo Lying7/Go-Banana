@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fmt"
+	"Go-Banana/glog"
+	"Go-Banana/server"
 )
 
 func main() {
-	fmt.Println("Go Banana!")
-	serverInit()
-	serverTick()
+	glog.Debug("Go Banana!")
+	server.Start()
 }
