@@ -1,6 +1,0 @@
-{
-	"Version": "0.0.1",
-	"Port": 11018,
-
-	"LogPath":"glog/log"
-}

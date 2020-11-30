@@ -1,0 +1,19 @@
+db:
+  addr: 106.53.153.76
+  port: 3306
+  user: admin
+  passwd: lpqq456Q!
+  dbname: GoBanana
+redis:
+  addr: redis-db:6379
+  password:
+  db: 0
+admin:
+  name: admin (管理员)
+  mail: mymail
+  password: mypassword
+version: 0.0.1
+logpath: glog/log
+address: :11018
+secretkey: Ji8sda5f7sdl7jO0ISD0ods64fj3dsq1
+lang: ch
