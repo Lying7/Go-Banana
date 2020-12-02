@@ -28,6 +28,7 @@ type Configuration struct {
 	Version   string `json:"version"`
 	Port      string `json:"port"`
 	LogPath   string `json:"logpath"`
+	LogName   string `json:"logname"`
 	Address   string `json:"address"`
 	Lang      string `json:"lang"`
 	Secretkey string `json:"secretkey"`

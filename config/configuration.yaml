@@ -13,7 +13,8 @@ admin:
   mail: mymail
   password: mypassword
 version: 0.0.1
-logpath: glog/log
+logpath: ./log/
+logname: gobanana.log
 address: :11018
 secretkey: Ji8sda5f7sdl7jO0ISD0ods64fj3dsq1
 lang: ch
